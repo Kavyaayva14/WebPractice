@@ -31,7 +31,7 @@ public class CartPage extends BaseWebPage {
 
     public void applyPromo()
     {
-        txt_promo.sendKeys("DigitalAuto10%");
+        txt_promo.sendKeys("DigitalAuto10");
         JavascriptExecutor executor = (JavascriptExecutor)driver;
         executor.executeScript("arguments[0].click();",btn_promoApply);
         btn_promoApply.click();
