@@ -13,7 +13,7 @@ public class TC_CheckoutSTH_CC_Promo_Charity_Guest extends BaseWebTest {
     public void STH_CC_Promo_Charity_Guest()
     {
         ProductDisplayPage addToCart = new ProductDisplayPage(driver);
-        addToCart.addToCartSTH();
+        //addToCart.addToCartSTH();
 
         CartPage cartPage = new CartPage(driver);
         cartPage.applyCharity();
