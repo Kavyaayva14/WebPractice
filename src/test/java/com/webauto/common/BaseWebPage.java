@@ -10,9 +10,6 @@ public class BaseWebPage {
     {
         this.driver=driver;
         PageFactory.initElements(driver,this);
-        //GIT
-        //GIT
-        //GIT
     }
 }
 
