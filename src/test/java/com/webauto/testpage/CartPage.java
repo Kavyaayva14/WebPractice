@@ -41,7 +41,6 @@ public class CartPage extends BaseWebPage {
     {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         wait.until(ExpectedConditions.elementToBeClickable(btn_continueCheckout));
-
         JavascriptExecutor executor = (JavascriptExecutor)driver;
         executor.executeScript("arguments[0].click();",btn_continueCheckout);
         btn_continueCheckout.click();

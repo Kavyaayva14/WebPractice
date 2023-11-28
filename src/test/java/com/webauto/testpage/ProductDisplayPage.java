@@ -29,10 +29,8 @@ public class ProductDisplayPage extends BaseWebPage {
     {
         txt_sku.sendKeys("5066968", Keys.ENTER);
         btn_sth.click();
-
         Select qty = new Select(drpdwn_sth);
         qty.selectByValue("3");
-
         btn_addToCart.click();
         btn_viewCart.click();
     }

@@ -10,6 +10,10 @@ public class BaseWebPage {
     {
         this.driver=driver;
         PageFactory.initElements(driver,this);
+<<<<<<< HEAD
+=======
+        //
+>>>>>>> eb010b5 (check)
     }
 }
 
