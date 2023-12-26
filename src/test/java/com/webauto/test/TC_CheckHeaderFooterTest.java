@@ -6,11 +6,12 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TC_CheckHeaderFooterTest extends BaseWebTest {
+    LandingPage homepage = new LandingPage(driver);
 
     @Test
     public void checkLogoPresence()
     {
-        LandingPage homepage = new LandingPage(driver);
+
         homepage.checkLogo();
         Assert.assertTrue(homepage.checkLogo());
     }
@@ -18,7 +19,7 @@ public class TC_CheckHeaderFooterTest extends BaseWebTest {
     @Test
     public void checkHeader()
     {
-        LandingPage homepage = new LandingPage(driver);
+        //LandingPage homepage = new LandingPage(driver);
         homepage.checkBrandHeader();
         Assert.assertTrue(homepage.checkBrandHeader());
 
@@ -29,7 +30,7 @@ public class TC_CheckHeaderFooterTest extends BaseWebTest {
     @Test
     public void checkFooter()
     {
-        LandingPage homepage = new LandingPage(driver);
+        //LandingPage homepage = new LandingPage(driver);
         homepage.checkWebAccessFooter();
         Assert.assertTrue(homepage.checkWebAccessFooter());
 
